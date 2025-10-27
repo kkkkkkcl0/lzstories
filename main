@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我们的故事 | 你的域名</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>💖 我们的爱情故事</h1>
+            <p>从相遇的那天起，每一天都因你而特别</p>
+        </header>
+        
+        <div class="timeline">
+            <!-- 时间轴内容会通过JavaScript动态添加 -->
+        </div>
+        
+        <div class="memory-count">
+            <p>我们已经一起创造了 <span id="dayCount">0</span> 天的回忆</p>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

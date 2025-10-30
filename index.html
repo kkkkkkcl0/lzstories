@@ -3,21 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stories</title>
+    <title>dog&mouse</title>
+    <style>
+        body
+        {
+            font-family: 
+        -apple-system, BlinkMacSystemFont, /* 苹果系统英文字体 */
+        "Segoe UI", Roboto, "Helvetica Neue", Arial, /* 微软和谷歌英文字体 */
+        "PingFang SC", "Hiragino Sans GB", /* 苹果系统中文字体 */
+        "Microsoft YaHei", "微软雅黑", /* 微软中文字体 */
+        sans-serif; /* 通用备选 */
+        }
+        /*全部的间隔*/
+        #头像
+        {
+            display: flex;
+            flex-direction:  row;
+            justify-content: center;
+            text-align: center;
+        }
+        #time  
+        {
+            display: flex;
+            flex-direction:  row;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        #功能区
+        {
+            display:flex;
+            flex-direction: row;
+            justify-content: center;
+            /*
+            元素之间的间隔
+
+            */
+        }
+    </style>
 </head>
 <body>
-    <form action="">
-        <label for="">你会选择</label><br>
-        <input type="radio" name="choice" >星期四v我50
-        <br>
-        <input type="radio" name="choice" >星期四v我50
-        <br>
-        <input type="radio" name="choice" >星期四v我50
-        <br>
-        <input type="radio" name="choice" >星期四v我50
-        <br>
-        <input type="radio" name="choice" >星期四v我50
-        <br>
-    </form>
+    <!--字体设置-->
+    <div>
+        <div id="头像">
+            <div class="头像">
+                <img src="" alt="加载失败" class="">
+                <br>
+                mouse
+            </div>
+            
+            <div class="头像">
+                <img src="#" alt="加载失败">
+                <br>
+                dog
+            </div>
+            
+        </div>
+    </div>
+    <div id="time">
+        <div class="time">
+            days:
+        </div>
+        <div class="time">
+            hours:
+        </div>
+        <div class="time">
+            minutes:
+        </div>
+        <div class="time">
+            seconds
+        </div>
+    </div>
+    <div id="功能区">
+        <div class="功能">
+            N件事
+        </div>
+        <div class="功能">
+            纪念日
+        </div>
+        <div class="功能">
+            待开发
+        </div>
+        <div class="功能">
+            待开发
+        </div>
+    </div>
 </body>
 </html>

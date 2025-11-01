@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>惊喜</title>
+  <style>
+    body {
+      margin:0;
+      font-family:"Microsoft YaHei",sans-serif;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:center;
+      height:100vh;
+      background:radial-gradient(circle at center,#ffe0f0,#fff5f8);
+      color:#333;
+      text-align:center;
+    }
+    h1 { font-size:40px; margin-bottom:20px; color:#ff4081; }
+    p { font-size:20px; margin-bottom:30px; }
+    button {
+      padding:12px 25px;
+      background:#ff6699;
+      color:#fff;
+      border:none;
+      border-radius:10px;
+      font-size:18px;
+      cursor:pointer;
+      transition:transform 0.2s ease, background 0.3s ease;
+    }
+    button:hover {
+      transform:scale(1.1);
+      background:#ff3388;
+    }
+    #message { margin-top:20px; font-size:22px; }
+
+    .home-btn {
+      position:fixed;
+      bottom:25px;
+      right:25px;
+      width:55px;
+      height:55px;
+      background:#ff4d6d;
+      border-radius:50%;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      box-shadow:0 6px 15px rgba(0,0,0,0.2);
+      cursor:pointer;
+      transition:background 0.3s ease, transform 0.2s ease;
+    }
+    .home-btn:hover {
+      background:#ff1e50;
+      transform:scale(1.1);
+    }
+    .home-btn img {
+      width:28px;
+      height:28px;
+      filter:invert(1);
+    }
+  </style>
+</head>
+<body>
+  <h1>🎉 小惊喜来了！</h1>
+  <p>点击下面按钮，看看属于我们的幸运吧 💖</p>
+  <button onclick="showSurprise()">点我！</button>
+  <p id="message"></p>
+
+  <div class="home-btn" onclick="location.href='index.html'">
+    <img src="https://cdn-icons-png.flaticon.com/512/25/25694.png" alt="主页">
+  </div>
+
+  <script>
+    const surprises = [
+      "你是我每天最想见到的人 💞",
+      "有你的日子，每天都甜一点 🍬",
+      "我们的未来，一定会更好 🌈",
+      "爱你三千遍 ❤️",
+      "想你，是我最温柔的小习惯 🌸"
+    ];
+    function showSurprise(){
+      const msg=document.getElementById('message');
+      const text=surprises[Math.floor(Math.random()*surprises.length)];
+      msg.textContent=text;
+    }
+  </script>
+</body>
+</html>

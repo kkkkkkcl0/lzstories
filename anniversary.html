@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>纪念日</title>
+  <style>
+    body {
+      margin:0;
+      font-family:"Microsoft YaHei",sans-serif;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:center;
+      height:100vh;
+      background:linear-gradient(135deg,#ffd6e7,#fff6f0);
+      color:#333;
+      text-align:center;
+    }
+    h1 { font-size:36px; margin-bottom:20px; }
+    p { font-size:20px; margin-bottom:30px; }
+
+    .home-btn {
+      position:fixed;
+      bottom:25px;
+      right:25px;
+      width:55px;
+      height:55px;
+      background:#ff4d6d;
+      border-radius:50%;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      box-shadow:0 6px 15px rgba(0,0,0,0.2);
+      cursor:pointer;
+      transition:background 0.3s ease, transform 0.2s ease;
+    }
+    .home-btn:hover {
+      background:#ff1e50;
+      transform:scale(1.1);
+    }
+    .home-btn img {
+      width:28px;
+      height:28px;
+      filter:invert(1);
+    }
+  </style>
+</head>
+<body>
+  <h1>我们的纪念日 💞</h1>
+  <p>那些值得铭记的时刻，都在这里。</p>
+
+  <div class="home-btn" onclick="location.href='index.html'">
+    <img src="https://cdn-icons-png.flaticon.com/512/25/25694.png" alt="主页">
+  </div>
+</body>
+</html>

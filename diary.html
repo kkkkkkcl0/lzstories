@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>恋爱日记</title>
+  <style>
+    body {
+      margin:0;
+      font-family:"Microsoft YaHei",sans-serif;
+      background:linear-gradient(135deg,#ffe5ec,#fffaf0);
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:flex-start;
+      min-height:100vh;
+      padding:60px 20px;
+      color:#333;
+    }
+    h1 { font-size:36px; margin-bottom:20px; }
+    textarea {
+      width:80%;
+      height:300px;
+      border:2px solid #ff7fa1;
+      border-radius:12px;
+      padding:15px;
+      font-size:18px;
+      outline:none;
+      resize:none;
+      background-color:rgba(255,255,255,0.8);
+    }
+    textarea:focus { box-shadow:0 0 10px rgba(255,100,150,0.5); }
+
+    .home-btn {
+      position:fixed;
+      bottom:25px;
+      right:25px;
+      width:55px;
+      height:55px;
+      background:#ff4d6d;
+      border-radius:50%;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      box-shadow:0 6px 15px rgba(0,0,0,0.2);
+      cursor:pointer;
+      transition:background 0.3s ease, transform 0.2s ease;
+    }
+    .home-btn:hover {
+      background:#ff1e50;
+      transform:scale(1.1);
+    }
+    .home-btn img {
+      width:28px;
+      height:28px;
+      filter:invert(1);
+    }
+  </style>
+</head>
+<body>
+  <h1>恋爱日记 💌</h1>
+  <textarea placeholder="记录我们的点滴时光..."></textarea>
+
+  <div class="home-btn" onclick="location.href='index.html'">
+    <img src="https://cdn-icons-png.flaticon.com/512/25/25694.png" alt="主页">
+  </div>
+</body>
+</html>

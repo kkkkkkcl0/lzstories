@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>恋爱清单</title>
+  <style>
+    body {
+      margin:0;
+      font-family:"Microsoft YaHei",sans-serif;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:flex-start;
+      height:100vh;
+      background:linear-gradient(120deg,#fff0f6,#ffe8e8);
+      color:#333;
+      padding-top:60px;
+    }
+    h1 { font-size:36px; margin-bottom:20px; }
+    ul { list-style:none; padding:0; font-size:20px; }
+    li { padding:8px 0; }
+
+    .home-btn {
+      position:fixed;
+      bottom:25px;
+      right:25px;
+      width:55px;
+      height:55px;
+      background:#ff4d6d;
+      border-radius:50%;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      box-shadow:0 6px 15px rgba(0,0,0,0.2);
+      cursor:pointer;
+      transition:background 0.3s ease, transform 0.2s ease;
+    }
+    .home-btn:hover {
+      background:#ff1e50;
+      transform:scale(1.1);
+    }
+    .home-btn img {
+      width:28px;
+      height:28px;
+      filter:invert(1);
+    }
+  </style>
+</head>
+<body>
+  <h1>恋爱清单 📝</h1>
+  <ul>
+    <li>✔️ 一起看一场日出</li>
+    <li>✔️ 一起做一次饭</li>
+    <li>⬜ 一起去旅行</li>
+    <li>⬜ 写一封信给未来的我们</li>
+  </ul>
+
+  <div class="home-btn" onclick="location.href='index.html'">
+    <img src="https://cdn-icons-png.flaticon.com/512/25/25694.png" alt="主页">
+  </div>
+</body>
+</html>
